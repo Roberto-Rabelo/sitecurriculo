@@ -1,0 +1,45 @@
+<header class="header" [class.scrolled]="isScrolled">
+  <nav class="nav">
+    <div class="nav-brand">
+      <a href="#home" (click)="scrollToTop(); $event.preventDefault()" class="brand-link">
+        <span class="brand-name">RR</span>
+      </a>
+    </div>
+    
+    <ul class="nav-menu" [class.active]="isMenuOpen">
+      <li><a href="#about" (click)="scrollToSection('about'); $event.preventDefault()">{{ translationService.translate('nav.about') }}</a></li>
+      <li><a href="#experience" (click)="scrollToSection('experience'); $event.preventDefault()">{{ translationService.translate('nav.experience') }}</a></li>
+      <li><a href="#education" (click)="scrollToSection('education'); $event.preventDefault()">{{ translationService.translate('nav.education') }}</a></li>
+      <li><a href="#projects" (click)="scrollToSection('projects'); $event.preventDefault()">{{ translationService.translate('nav.projects') }}</a></li>
+      <li><a href="#skills" (click)="scrollToSection('skills'); $event.preventDefault()">{{ translationService.translate('nav.skills') }}</a></li>
+      <li><a href="#extracurricular" (click)="scrollToSection('extracurricular'); $event.preventDefault()">{{ translationService.translate('nav.extracurricular') }}</a></li>
+      <li><a href="#contact" (click)="scrollToSection('contact'); $event.preventDefault()">{{ translationService.translate('nav.contact') }}</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="theme-selector">
+        <button class="theme-toggle" (click)="toggleThemeMenu()" [attr.aria-label]="'Toggle theme'">
+          <span class="theme-icon">{{ getThemeIcon(currentTheme) }}</span>
+        </button>
+        <div class="theme-menu" [class.active]="isThemeMenuOpen">
+          <button 
+            *ngFor="let theme of ['dark', 'light', 'purple']" 
+            class="theme-option" 
+            [class.active]="currentTheme === theme"
+            (click)="setTheme(asTheme(theme))">
+            <span class="theme-option-icon">{{ getThemeIcon(asTheme(theme)) }}</span>
+            <span class="theme-option-name">{{ getThemeName(asTheme(theme)) }}</span>
+          </button>
+        </div>
+      </div>
+      <button class="lang-toggle" (click)="toggleLanguage()" [attr.aria-label]="currentLanguage === 'pt' ? 'Switch to English' : 'Mudar para Português'">
+        {{ currentLanguage === 'pt' ? 'EN' : 'PT' }}
+      </button>
+      <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-label]="'Toggle menu'">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>

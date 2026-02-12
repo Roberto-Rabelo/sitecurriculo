@@ -1,0 +1,14 @@
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title">{{ translationService.translate('sections.skills') }}</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-category" *ngFor="let skill of skills">
+        <h3 class="category-title">{{ skill.category }}</h3>
+        <div class="skill-items">
+          <span class="skill-item" *ngFor="let item of skill.items">{{ item }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

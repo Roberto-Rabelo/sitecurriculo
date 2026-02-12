@@ -1,0 +1,30 @@
+<section id="extracurricular" class="extracurricular">
+  <div class="container">
+    <h2 class="section-title">{{ translationService.translate('sections.extracurricular') }}</h2>
+    
+    <div class="activities-grid">
+      <div class="activity-card" *ngFor="let activity of activities">
+        <div class="activity-header">
+          <h3 class="activity-title">{{ activity.title }}</h3>
+          <span class="activity-period" *ngIf="activity.period">{{ activity.period }}</span>
+        </div>
+        <p class="activity-description">{{ activity.description }}</p>
+        <div class="activity-achievement" *ngIf="activity.achievement">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <span>{{ activity.achievement }}</span>
+        </div>
+        <a *ngIf="activity.link" [href]="activity.link" target="_blank" rel="noopener" class="activity-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          <span>{{ translationService.getCurrentLanguageValue() === 'pt' ? 'Ver trabalho' : 'View work' }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

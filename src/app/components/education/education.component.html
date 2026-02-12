@@ -1,0 +1,39 @@
+<section id="education" class="education">
+  <div class="container">
+    <h2 class="section-title">{{ translationService.translate('sections.education') }}</h2>
+    
+    <div class="education-grid">
+      <div class="education-section">
+        <h3 class="subsection-title">{{ translationService.getCurrentLanguageValue() === 'pt' ? 'Formação Acadêmica' : 'Academic Education' }}</h3>
+        <div class="education-list">
+          <div class="education-card" *ngFor="let edu of education">
+            <div class="education-header">
+              <h4 class="institution">{{ edu.institution }}</h4>
+              <span class="status" [class.ongoing]="edu.status === 'Cursando' || edu.status === 'Ongoing'">
+                {{ edu.status }}
+              </span>
+            </div>
+            <p class="course">{{ edu.course }}</p>
+            <span class="period">{{ edu.period }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses-section">
+        <h3 class="subsection-title">{{ translationService.getCurrentLanguageValue() === 'pt' ? 'Cursos' : 'Courses' }}</h3>
+        <div class="courses-list">
+          <div class="course-card" *ngFor="let course of courses">
+            <div class="course-header">
+              <h4 class="course-title">{{ course.title }}</h4>
+              <span class="course-hours" *ngIf="course.hours">{{ course.hours }}</span>
+            </div>
+            <p class="course-institution">{{ course.institution }} - {{ course.period }}</p>
+            <div class="course-topics" *ngIf="course.topics.length > 0">
+              <span class="topic-tag" *ngFor="let topic of course.topics">{{ topic }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

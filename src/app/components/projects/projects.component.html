@@ -1,0 +1,64 @@
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">{{ translationService.translate('sections.projects') }}</h2>
+    
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects; let i = index" [class.has-link]="project.link">
+        <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noopener" class="project-link">
+          <div class="project-image">
+            <div class="image-placeholder">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                <rect width="100" height="100" [attr.fill]="'url(#projectGradient' + i + ')'"/>
+                <defs>
+                  <linearGradient [attr.id]="'projectGradient' + i" x1="0" y1="0" x2="100" y2="100">
+                    <stop offset="0%" stop-color="#667eea"/>
+                    <stop offset="100%" stop-color="#764ba2"/>
+                  </linearGradient>
+                </defs>
+                <text x="50" y="55" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">{{ project.title.charAt(0) }}</text>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-technologies">
+              <span class="tech-badge" *ngFor="let tech of project.technologies">{{ tech }}</span>
+            </div>
+            <div class="project-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>{{ translationService.getCurrentLanguageValue() === 'pt' ? 'Ver projeto' : 'View project' }}</span>
+            </div>
+          </div>
+        </a>
+        <div *ngIf="!project.link">
+          <div class="project-image">
+            <div class="image-placeholder">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                <rect width="100" height="100" [attr.fill]="'url(#projectGradientNoLink' + i + ')'"/>
+                <defs>
+                  <linearGradient [attr.id]="'projectGradientNoLink' + i" x1="0" y1="0" x2="100" y2="100">
+                    <stop offset="0%" stop-color="#667eea"/>
+                    <stop offset="100%" stop-color="#764ba2"/>
+                  </linearGradient>
+                </defs>
+                <text x="50" y="55" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">{{ project.title.charAt(0) }}</text>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-technologies">
+              <span class="tech-badge" *ngFor="let tech of project.technologies">{{ tech }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

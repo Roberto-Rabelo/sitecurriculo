@@ -1,0 +1,26 @@
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">{{ translationService.translate('sections.experience') }}</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let exp of experiences; let i = index">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="experience-header">
+            <h3 class="company">{{ exp.company }}</h3>
+            <span class="period">{{ exp.period }}</span>
+          </div>
+          <h4 class="position">{{ exp.position }}</h4>
+          
+          <ul class="description-list" *ngIf="exp.description.length > 0">
+            <li *ngFor="let desc of exp.description">{{ desc }}</li>
+          </ul>
+          
+          <div class="technologies" *ngIf="exp.technologies.length > 0">
+            <span class="tech-tag" *ngFor="let tech of exp.technologies">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

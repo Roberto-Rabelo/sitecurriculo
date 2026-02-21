@@ -254,6 +254,13 @@ export class DataService {
         link: 'http://esocialinfis.mysped.net/'
       },
       {
+        title: 'Emissor nota fiscal',
+        description: 'O EmissorNotas foi desenvolvido para centralizar e automatizar o ciclo de vida de Notas Fiscais Eletrônicas.A solução adota princípios de Clean Architecture e Domain-Driven Design (DDD) utilizando arquitetura em camadas, separando API, serviços, domínio e infraestrutura. A autenticação é feita por API Key por empresa, e a integração com PlugNotas permite emissão, consulta, cancelamento e carta de correção. O histórico de eventos garante rastreabilidade completa e os webhooks permitem notificações em tempo real para sistemas externos.',
+        technologies: ['.NET 10', 'ASP.NET ', 'SQL Server', 'EF', 'Swagger', 'Docker', 'DDD','NF-e', 'Webhooks', 'Clean Architecture'],
+        image: 'assets/projects/acquaxcontrol.jpg',
+        link: 'http://emissornotashomolog.mysped.net/swagger/index.html'
+      },
+      {
         title: 'AcquaXcontrol',
         description: 'Sistema desenvolvido com intuito de levar praticidade aos clientes, visando a facilitação do acompanhamento e controle do consumo individual por parte do condômino.',
         technologies: ['ASP NET CORE', 'C#', 'RESTful API', 'SQL SERVER'],
@@ -272,12 +279,6 @@ export class DataService {
         description: 'Plataforma online que visa unir pessoal para evoluir suas habilidade e hobby de forma 100% presencial',
         technologies: ['Angular', 'ASP.NET Core', 'SQL Server'],
         image: 'assets/projects/hobbies.jpg'
-      },
-      {
-        title: 'E-commerce MVC',
-        description: 'Prototipo criado baseado no modelo MVC, sendo um E-commerce criado totalmente do zero com HTML, CSS, JS e PHP e integração com API\'s do MAPBOX e correios. Incluindo teste de software com selenium',
-        technologies: ['PHP', 'HTML', 'CSS', 'JavaScript', 'Selenium', 'MAPBOX API'],
-        image: 'assets/projects/ecommerce.jpg'
       }
     ],
     en: [
@@ -294,6 +295,13 @@ export class DataService {
         technologies: ['C#', 'ASP.NET Core', 'SQL Server', 'XML', 'RESTful API'],
         image: 'assets/projects/esocial.jpg',
         link: 'http://esocialinfis.mysped.net/'
+      },
+      {
+        title: 'Emissor nota fiscal',
+        description: 'EmissorNotas was developed to centralize and automate the lifecycle of Electronic Invoices. The solution adopts Clean Architecture and Domain-Driven Design (DDD) principles using a layered architecture, separating API, services, domain, and infrastructure. Authentication is done via API Key per company, and integration with PlugNotas allows for issuance, consultation, cancellation, and correction letters. The event history ensures complete traceability, and webhooks allow for real-time notifications to external systems.',
+        technologies: ['.NET 10', 'ASP.NET ', 'SQL Server', 'EF', 'Swagger', 'Docker', 'DDD','NF-e', 'Webhooks', 'Clean Architecture'],
+        image: 'assets/projects/acquaxcontrol.jpg',
+        link: 'http://emissornotashomolog.mysped.net/swagger/index.html'
       },
       {
         title: 'AcquaXcontrol',
@@ -314,12 +322,6 @@ export class DataService {
         description: 'Online platform that aims to bring people together to evolve their skills and hobbies in a 100% in-person format',
         technologies: ['Angular', 'ASP.NET Core', 'SQL Server'],
         image: 'assets/projects/hobbies.jpg'
-      },
-      {
-        title: 'MVC E-commerce',
-        description: 'Prototype created based on the MVC model, an E-commerce built from scratch with HTML, CSS, JS and PHP and integration with MAPBOX and postal service APIs. Including software testing with Selenium',
-        technologies: ['PHP', 'HTML', 'CSS', 'JavaScript', 'Selenium', 'MAPBOX API'],
-        image: 'assets/projects/ecommerce.jpg'
       }
      
     ]

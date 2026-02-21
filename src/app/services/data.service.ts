@@ -17,7 +17,7 @@ export class DataService {
       email: 'roberto.junior.gonzaga@gmail.com',
       phone: '(21) 97995-6274',
       github: 'https://github.com/Roberto-Rabelo',
-      portfolio: 'https://roberto-rabelo.github.io/perfil/',
+      portfolio: 'https://roberto-rabelo.github.io/sitecurriculo/',
       bio: 'Imerso na tecnologia desde 2014, transformo desafios em software que funciona e gera impacto real. Com background sólido em desenvolvimento Full Stack e Arquitetura de Software, foco em automação de processos e sistemas escaláveis, sempre priorizando performance e a melhor experiência para o usuário final'
     },
     en: {
@@ -29,7 +29,7 @@ export class DataService {
       email: 'roberto.junior.gonzaga@gmail.com',
       phone: '+55 (21) 97995-6274',
       github: 'https://github.com/Roberto-Rabelo',
-      portfolio: 'https://roberto-rabelo.github.io/perfil/',
+      portfolio: 'https://roberto-rabelo.github.io/sitecurriculo/',
       bio: 'Immersed in technology since 2014, I transform challenges into software that works and generates real impact. With a solid background in Full Stack Development and Software Architecture, I focus on process automation and scalable systems, always prioritizing performance and the best experience for the end user.'
     }
   };
@@ -251,7 +251,7 @@ export class DataService {
         description: 'Sistema de transmissão unificada de informações trabalhistas, previdenciárias e fiscais para órgãos públicos. Gerencia eventos como admissões, demissões, folha de pagamento e condições de trabalho em conformidade com obrigações legais.',
         technologies: ['C#', 'ASP.NET ', 'SQL Server', 'XML', 'RESTful API'],
         image: 'assets/projects/esocial.jpg',
-        link: 'http://esocialinfis.mysped.net/login'
+        link: 'http://esocialinfis.mysped.net/'
       },
       {
         title: 'AcquaXcontrol',
@@ -293,7 +293,7 @@ export class DataService {
         description: 'Unified system for transmitting labor, social security and tax information to Brazilian public agencies. Manages events such as hiring, dismissals, payroll and working conditions in compliance with legal obligations.',
         technologies: ['C#', 'ASP.NET Core', 'SQL Server', 'XML', 'RESTful API'],
         image: 'assets/projects/esocial.jpg',
-        link: 'http://esocialinfis.mysped.net/login'
+        link: 'http://esocialinfis.mysped.net/'
       },
       {
         title: 'AcquaXcontrol',

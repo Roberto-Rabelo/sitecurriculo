@@ -261,6 +261,13 @@ export class DataService {
         link: 'http://emissornotashomolog.mysped.net/swagger/index.html'
       },
       {
+        title: 'DINFIS',
+        description: 'Sistema desenvolvido com o objetivo de facilitar a emissão de notas fiscais de importação a partir de um documento XML da Declaração de Importação (DI). Realiza a leitura do arquivo, permitindo a personalização de valores e a realização de ajustes necessários, transformando-o em um arquivo TXT válido para o emissor do SEBRAE',
+        technologies: ['ASP NET CORE', 'C#', 'Entity Framework','XML-TXT','Angular', 'RESTful API', 'SQL SERVER'],
+        image: 'assets/projects/dinfis.jpg',
+        link: 'https://dinfis.intrainfis.com/login'
+      },
+      {
         title: 'AcquaXcontrol',
         description: 'Sistema desenvolvido com intuito de levar praticidade aos clientes, visando a facilitação do acompanhamento e controle do consumo individual por parte do condômino.',
         technologies: ['ASP NET CORE', 'C#', 'RESTful API', 'SQL SERVER'],
@@ -273,12 +280,6 @@ export class DataService {
         technologies: ['HTML', 'CSS', 'JavaScript'],
         image: 'assets/projects/atletas.jpg',
         link: 'https://roberto-rabelo.github.io/atlesta_da_vida/'
-      },
-      {
-        title: 'Plataforma de Hobbies',
-        description: 'Plataforma online que visa unir pessoal para evoluir suas habilidade e hobby de forma 100% presencial',
-        technologies: ['Angular', 'ASP.NET Core', 'SQL Server'],
-        image: 'assets/projects/hobbies.jpg'
       }
     ],
     en: [
@@ -304,24 +305,25 @@ export class DataService {
         link: 'http://emissornotashomolog.mysped.net/swagger/index.html'
       },
       {
+        title: 'DINFIS',
+        description: 'System developed with the purpose of facilitating the issuance of import invoices from an XML document of the Import Declaration (DI).The system reads the file, allowing value customization and necessary adjustments, converting it into a valid TXT file for the SEBRAE issuer',
+        technologies: ['ASP NET CORE', 'C#', 'Entity Framework','XML-TXT','Angular', 'RESTful API', 'SQL SERVER'],
+        image: 'assets/projects/dinfis.jpg',
+        link: 'https://dinfis.intrainfis.com/login'
+      },
+      {
         title: 'AcquaXcontrol',
         description: 'System developed to bring convenience to clients, aiming to facilitate monitoring and control of individual consumption by condominium residents.',
         technologies: ['ASP NET CORE', 'C#', 'RESTful API', 'SQL SERVER'],
         image: 'assets/projects/acquaxcontrol.jpg',
         link: 'https://www.acquaxcontrol.com.br/login'
       },
-            {
+     {
         title: 'Atletas da Vida',
         description: 'Promotional website for the Atletas da Vida project, run by @atlestadavida on IG, which aims to train 25 athletes in women\'s football',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         image: 'assets/projects/atletas.jpg',
         link: 'https://roberto-rabelo.github.io/atlesta_da_vida/'
-      },
-      {
-        title: 'Hobbies Platform',
-        description: 'Online platform that aims to bring people together to evolve their skills and hobbies in a 100% in-person format',
-        technologies: ['Angular', 'ASP.NET Core', 'SQL Server'],
-        image: 'assets/projects/hobbies.jpg'
       }
      
     ]
